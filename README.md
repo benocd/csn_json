@@ -8,7 +8,7 @@ Gets the latest seismic events from the Chilean National Seismological Center (h
 
 ## Demo
 
-Demo funcional pronto
+Working Demo here: https://clarion-minerals.000webhostapp.com/sismologia/
 
 ## Author
 
