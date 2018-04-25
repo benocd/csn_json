@@ -1,4 +1,4 @@
-# CSN -> JSON
+# Centro Sismológico Nacional -> JSON
 
 [ES]
 Obtiene la tabla con los últimos sismos registrados por el Centro Sismológico Nacional (http://www.sismologia.cl/) y la convierte a formato JSON.
