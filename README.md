@@ -4,7 +4,7 @@
 Obtiene la tabla con los últimos sismos registrados por el Centro Sismológico Nacional (http://www.sismologia.cl/) y la convierte a formato JSON.
 
 [EN]
-Gets the latest seismic events from the Chilean National Seismological Center (http://www.sismologia.cl/) and converts them to JSON format.
+Gets the latest seismic events from the Chilean National Seismological Center (http://www.sismologia.cl/) and shows them in JSON format.
 
 ## Demo
 
