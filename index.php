@@ -28,7 +28,8 @@ foreach($Detail as $sNodeDetail)
 $i = 0;
 foreach ($aDataTableDetailHTML as $event) {
     foreach ($event as $key => $value) {
-        $sisObj[$i][$aDataTableHeaderHTML[$key]] = $value;
+        $nombre = $input = preg_replace("/[^a-zA-Z]+/", "", $aDataTableHeaderHTML[$key]);
+        $sisObj[$i][$nombre] = $value;
     }
     $i++;
 }
