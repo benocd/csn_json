@@ -30,6 +30,17 @@ foreach ($aDataTableDetailHTML as $event) {
     foreach ($event as $key => $value) {
         $nombre = $input = preg_replace("/[^a-zA-Z]+/", "", $aDataTableHeaderHTML[$key]);
         $sisObj[$i][$nombre] = $value;
+        if ($nombre == "FechaLocal" || $nombre == "FechaUTC") {
+            $timezone=null;
+            if ($nombre == "FechaLocal") {
+                $timezone = new DateTimeZone("America/Santiago");
+            }
+            $date = DateTime::createFromFormat("Y/m/d H:i:s", $value, $timezone)->format(DateTime::ATOM);
+            $sisObj[$i][$nombre] = $date;
+        }
+        if ($nombre == "Latitud" || $nombre == "Longitud" || $nombre == "ProfundidadKm") {
+            $sisObj[$i][$nombre] = (float)$value;
+        }
     }
     $i++;
 }
